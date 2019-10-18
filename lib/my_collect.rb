@@ -5,8 +5,8 @@ def my_collect(collection)
   new_collection = []
   while i < collection.length
     new_collection << yield(collection[i])
-    i += 1
+    i.split(" ") += 1
   end
   new_collection
-  binding.pry
+  #binding.pry
 end
